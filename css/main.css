@@ -241,14 +241,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-/* ------ Not in solution -----
-.mission h2 {
-  margin-bottom: 20px;
-}
-
-.mission p {
-  margin: 0;
-}
 
 .contact-section {
   display: flex;
@@ -256,10 +248,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-
-.contact-section h4 {
-  margin: 20px 0px;
-}*/
 
 .contact-content p {
   margin: 0px;
@@ -374,7 +362,7 @@ aside {
   clear: both;
 }
 
-/* ================================  Media Queries for Responsive Design ============================= */
+/* ======================  Media Queries for Responsive Design ============================= */
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
@@ -403,6 +391,7 @@ aside {
   header nav ul {
     justify-content: space-between;
   }
+
   .header-divider {
     display: none;
   }
@@ -511,7 +500,61 @@ aside {
  
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+  .content-wrapper {
+    max-width: 960px;
   }
+  
+  /* Header */
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    width: 60%;
+  }
+  
+  /* Aside */
+  
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* Footer */
+
+  /* About */
+
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 95%;
+    }
+
+  /* FAQ */
+    
+    .faq h2 {
+      width: 100%;
+    }
+}
 
 /* ==========================================================================
    Print styles.
