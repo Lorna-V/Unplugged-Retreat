@@ -304,16 +304,18 @@ input[type=button] {
   flex-flow: row wrap;
   background: url('../img/features-image.jpg') center no-repeat #333; 
   background-size: cover;
+  background-position: center;
 }
 
 .featuers h2 {
   margin-bottom: 60px;
+  text-align: left; /*Not in solution*/ 
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top; /*Not in solution*/
   flex-flow: row wrap;
 }
 
@@ -324,6 +326,12 @@ input[type=button] {
 
 .features p {
   margin: 0px;
+  text-align: center;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -592,7 +600,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -659,14 +667,6 @@ input[type=button] {
   .map figure {
     padding-bottom: 45.5%; 
 }
- 
-/*.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-}*/
 
   .mission-content p {
     width: 45%;
