@@ -102,7 +102,9 @@ body {
  
 ul, 
 ol {
- list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -114,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
  
 h3, 
@@ -257,6 +260,7 @@ footer .copyright {
   flex-flow: row wrap;
   background: url('../img/hero-image.jpg') center no-repeat #333; 
   background-size: cover;
+  background-position: center;
   min-height: 500px;
 }
 
@@ -284,10 +288,9 @@ aside .form {
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
-  color: #2a423a; /* color: #9d9ea4; text color? */
+  color: #2a423a;
   font-style: italic;
   padding: 1em;
-  /*fill?*/
 }
  
 input[type=button] {
@@ -315,15 +318,15 @@ input[type=button] {
   background-position: center;
 }
 
-.featuers h2 {
+.features h2 {
   margin-bottom: 60px;
-  text-align: left; /*Not in solution*/ 
+  /*text-align: left; Not in solution*/ 
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: top; /*Not in solution*/
+  align-items: center; /*LV thought top*/
   flex-flow: row wrap;
 }
 
@@ -366,12 +369,12 @@ input[type=button] {
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158; 
-}
+  }
 
 .map figure {
   width: 100%;
@@ -569,6 +572,10 @@ input[type=button] {
 
   /* Hero Area */
   
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -677,12 +684,12 @@ input[type=button] {
     padding-top: 20px;
   }
 
-  .map figure {
-    padding-bottom: 45.5%; 
-}
-
   .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%; 
   }
 
   .contact-section .content-wrapper h2 {
@@ -724,6 +731,10 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -740,12 +751,6 @@ input[type=button] {
   p {
     font-size: 1.125em;
     line-height: 1.333;
-  }
-  
-  /* Header */
-
-  header {
-    padding: 15px 0;
   }
 
   /* Hero Area */
