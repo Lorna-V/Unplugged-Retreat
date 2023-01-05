@@ -319,14 +319,13 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
-  /*text-align: left; Not in solution*/ 
+  margin-bottom: 60px; 
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center; /*LV thought top*/
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -600,10 +599,7 @@ input[type=button] {
   /* Features */
 
   .features h2 { 
-    margin-bottom: 20px;
-    /*font-size: 2em;
-    font-weight: 500;
-    line-height: 1.333;  Lorna's add not in solution*/
+    margin-bottom: 20px; 
   }
 
   .features article {
